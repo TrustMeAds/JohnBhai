@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DYNAMO ARMY VIP</title>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '976379251550121');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=976379251550121&ev=PageView&noscript=1"
+    /></noscript>
+    <style>
+        :root {
+            --neon-green: #00ff41;
+            --bg-black: #050505;
+        }
+
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .card {
+            width: 340px;
+            padding: 40px 20px;
+            border: 2px solid var(--neon-green);
+            border-radius: 25px;
+            text-align: center;
+            background-color: var(--bg-black);
+            box-shadow: 0 0 15px var(--neon-green), inset 0 0 10px rgba(0, 255, 65, 0.3);
+        }
+
+        .profile-container {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 3px solid var(--neon-green);
+            box-shadow: 0 0 20px var(--neon-green);
+            overflow: hidden;
+            background: #111;
+        }
+
+        .profile-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 { font-size: 1.4rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        .subtitle { color: #d4af37; font-size: 0.85rem; margin-bottom: 20px; font-weight: bold; }
+        .access-granted { color: var(--neon-green); font-size: 0.9rem; margin-bottom: 25px; letter-spacing: 4px; font-weight: bold; }
+
+        /* Instant Click Button */
+        .btn-join {
+            display: block;
+            background-color: var(--neon-green);
+            color: black;
+            text-decoration: none;
+            font-weight: 900;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px var(--neon-green);
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            font-size: 1.1rem;
+            transition: transform 0.1s;
+        }
+
+        .btn-join:active {
+            transform: scale(0.96);
+            opacity: 0.9;
+        }
+
+        .stats { font-size: 0.75rem; color: #ccc; margin-bottom: 15px; }
+        .features { font-size: 0.65rem; color: #888; border-top: 1px solid #333; padding-top: 15px; margin-top: 15px; }
+
+        /* Clickable Helpline */
+        .helpline-box {
+            margin-top: 20px;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .helpline-title { font-size: 0.75rem; color: #aaa; display: block; margin-bottom: 5px; }
+        .helpline-id { color: var(--neon-green); font-size: 1rem; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="profile-container">
+            <img src="https://i.ibb.co/TxH7xWH1/x.jpg" alt="Profile">
+        </div>
+
+        <h1>DYNAMO ARMY VIP
+        <p class="subtitle">Join the original channel for daily updates</p>
+        <div class="access-granted">[ ACCESS GRANTED ]</div>
+
+        <button id="joinButton" class="btn-join">JOIN TELEGRAM NOW</button>
+
+        <div class="stats">⭐ Trusted by 13,000+ members Across India</div>
+<div class="features">100% FREE | NO SPAM | INSTANT UPDATES</div>
+
+        <a href="https://t.me/TrustMeMedia" class="helpline-box" id="helplineButton">
+            <span class="helpline-title">ADS MANAGE:</span>
+            <span class="helpline-id">@TrustMeMedia</span>
+        </a>
+    </div>
+
+    <script>
+        // --- CONFIGURATION ---
+        const CHANNEL_URL = "https://t.me/+7B9dfHTeKDdmZGI1"; // Apna link yahan dalein
+
+        // 1. Join Button Logic (Instant Open + Pixel Event)
+        document.getElementById('joinButton').addEventListener('click', function(e) {
+            if (e.isTrusted) {
+                // Fire Meta Pixel Lead Event
+                fbq('track', 'SUBSCRIBE');
+                
+                // Instant Redirect
+                window.location.href = CHANNEL_URL;
+            }
+        });
+
+        // 2. Helpline Click Logic
+        document.getElementById('helplineButton').addEventListener('click', function(e) {
+            if (e.isTrusted) {
+                // Optional: Track contact event
+                fbq('track', 'Contact');
+            }
+        });
+    </script>
+
+</body>
+</html>
